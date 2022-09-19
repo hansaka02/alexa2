@@ -9192,7 +9192,7 @@ case 'ehi': {
 
             hey = fs.readFileSync('./media/ᴠᴘɴᴋɪɴɢ ᴍ ᴢᴇʀᴏ ᴠ2ʀʏ.ehi')
 
-            ZimBotInc.sendMessage(m.chat, {ehi: hey, mimetype: 'ehi/ehi', ptt:true }, {quoted:m})
+            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'text/ehi', ptt:true }, {quoted:m})
 
             }
 
