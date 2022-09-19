@@ -9189,9 +9189,15 @@ case 'toxic': {
 
 
 case 'ehi': {
-hey = fs.readFileSync('./media/ᴠᴘɴᴋɪɴɢ ᴍ ᴢᴇʀᴏ ᴠ2ʀʏ.ehi')
 
-ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'document/ehi', ptt:true}, {quoted:m})
+            hey = fs.readFileSync('./media/ᴠᴘɴᴋɪɴɢ ᴍ ᴢᴇʀᴏ ᴠ2ʀʏ.ehi')
+
+            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'document/ehi', ptt:true }, {quoted:m})
+
+            }
+
+            break
+
 
 
 case 'sond': {
