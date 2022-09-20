@@ -9194,7 +9194,7 @@ case 'toxic': {
 
 case 'ehi': {
 
-            hey = fs.readFileSync('./media/ᴠᴘɴᴋɪɴɢ ᴍ ᴢᴇʀᴏ ᴠ2ʀʏ.ehi')
+            hey = fs.readFileSync('./media/ehi.zip')
 
             ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'application/zip', ptt:true }, {quoted:m})
 
