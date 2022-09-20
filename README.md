@@ -25,6 +25,15 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zim-bot/zimbot-v3)
 
+## >  NEW FEATURE ADDED
+```
+FOR DOWNLOAD WHATSAPP SPAM - spamedl
+FOR DOWNLOAD EHI - ehi
+FOR OWNER INFOMATIOM - owner
+
+
+```
+
 ## BUILD PACKS
 
 ```
@@ -67,14 +76,7 @@ echo scan the qr code and enjoy bot
 
 ```
 ## >  AFTER INSTALL
-## >  NEW FEATURE ADDED
-```
-FOR DOWNLOAD WHATSAPP SPAM - spamedl
-FOR DOWNLOAD EHI - ehi
-FOR OWNER INFOMATIOM - owner
 
-
-```
 
 ## JOIN MY WHATSAPP GROUP
 
