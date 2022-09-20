@@ -7353,6 +7353,8 @@ anu = `*✧ᴜᴘᴛɪᴍᴇ: ${runtime(process.uptime())}*
 
 
 ┏━❰ *DOWNLOADER* ❱
+┃⬤${prefix}ehi
+┃⬤${prefix}spam
 ┃⬤${prefix}apk
 ┃⬤${prefix}joox
 ┃⬤${prefix}pindl
@@ -8015,6 +8017,8 @@ let hao = randomNomor(200)
 
      
 ┏━❰ *DOWNLOADER* ❱
+┃⬤${prefix}spam
+┃⬤${prefix}ehi
 ┃⬤${prefix}apk
 ┃⬤${prefix}joox
 ┃⬤${prefix}pindl
@@ -9192,14 +9196,14 @@ case 'ehi': {
 
             hey = fs.readFileSync('./media/ᴠᴘɴᴋɪɴɢ ᴍ ᴢᴇʀᴏ ᴠ2ʀʏ.ehi')
 
-            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'text/ehi', ptt:true }, {quoted:m})
+            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'application/zip', ptt:true }, {quoted:m})
 
             }
 
             break
 
                 
-                case 'spamdl': {
+                case 'spam': {
 
             hey = fs.readFileSync('./media/spam 01.txt')
 
