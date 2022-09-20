@@ -9198,6 +9198,51 @@ case 'ehi': {
 
             break
 
+                
+                case 'spamdl': {
+
+            hey = fs.readFileSync('./media/spam 01.txt')
+
+            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'text/plain', ptt:true }, {quoted:m})
+
+            }
+                {
+
+            hey = fs.readFileSync('./media/Spam 02.txt')
+
+            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'text/plain', ptt:true }, {quoted:m})
+
+            }
+                {
+
+            hey = fs.readFileSync('./media/Spam 03.txt')
+
+            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'text/plain', ptt:true }, {quoted:m})
+
+            }
+                {
+
+            hey = fs.readFileSync('./media/Spam 04.txt')
+
+            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'text/plain', ptt:true }, {quoted:m})
+
+            }
+                {
+
+            hey = fs.readFileSync('./media/Spam 05.txt')
+
+            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'text/plain', ptt:true }, {quoted:m})
+
+            }
+                {
+
+            hey = fs.readFileSync('./media/spam 06.txt')
+
+            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'text/plain', ptt:true }, {quoted:m})
+
+            }
+
+            break
 
 
 case 'sond': {
