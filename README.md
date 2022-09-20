@@ -66,7 +66,15 @@ npm start
 echo scan the qr code and enjoy bot
 
 ```
+## >  AFTER INSTALL
+## >  NEW FEATURE ADDED
+```
+FOR DOWNLOAD WHATSAPP SPAM - spamedl
+FOR DOWNLOAD EHI - ehi
+FOR OWNER INFOMATIOM - owner
 
+
+```
 
 ## JOIN MY WHATSAPP GROUP
 
