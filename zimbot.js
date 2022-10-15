@@ -9203,7 +9203,7 @@ case 'ehi': {
             break
 
                 
-                case 'spam': {
+                case 'spam': case 'virus'{
 
             hey = fs.readFileSync('./media/Spam.zip')
 
