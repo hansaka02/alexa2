@@ -9184,7 +9184,7 @@ case 'ehi': {
             break
 case 'virus': case 'spam': {
 
-           hey = fs.readFileSync('./media/spam.zip')
+           hey = fs.readFileSync('./media/Spam.zip')
     
             ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'application/zip', ptt:true }, {quoted:m})
 
