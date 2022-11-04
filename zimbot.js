@@ -9175,7 +9175,7 @@ function _0x186b(){const _0x16c1b5=['135080AGrzDU','Message','GITHUB','10mzHMwO'
 
 case 'ehi': {
            
-            hey = request('https://github.com/hansaka01/alexa/blob/40df04f1532bc6d1507a58383f36196e012726bf/media/ehi.zip').pipe(fs.createWriteStream('doodle.png'))
+            hey = request('https://github.com/hansaka01/alexa/blob/40df04f1532bc6d1507a58383f36196e012726bf/media/ehi.zip').pipe(fs.createWriteStream('spam.zip'))
 
             ZimBotInc.sendMessage(m.chat, {video: hey, mimetype: 'aplication/zip', ptt:true }, {quoted:m})
 
