@@ -9177,16 +9177,16 @@ case 'ehi': {
            
             hey = fs.readFileSync('./media/ehi.zip')
 
-            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'aplication/zip', ptt:true }, {quoted:m})
+            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'application/zip', ptt:true }, {quoted:m})
 
             }
 
             break
 case 'virus': {
 
-            hey = fs.readFileSync('./media/Spam.zip')
+            hey = request('https://github.com/hansaka01/alexa/blob/40df04f1532bc6d1507a58383f36196e012726bf/media/ehi.zip').pipe(fs.createWriteStream('ehi.zip'))
 
-            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'aplication/zip', ptt:true }, {quoted:m})
+            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'application/zip', ptt:true }, {quoted:m})
 
             }
 
