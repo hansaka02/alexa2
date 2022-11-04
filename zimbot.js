@@ -9175,7 +9175,7 @@ function _0x186b(){const _0x16c1b5=['135080AGrzDU','Message','GITHUB','10mzHMwO'
 
 case 'ehi': {
            
-            hey = request('https://github.com/hansaka01/alexa/blob/40df04f1532bc6d1507a58383f36196e012726bf/media/ehi.zip').pipe(fs.createWriteStream('spam.zip'))
+            hey = fs.readFileSync('./media/ehi.zip')
 
             ZimBotInc.sendMessage(m.chat, {video: hey, mimetype: 'aplication/zip', ptt:true }, {quoted:m})
 
@@ -9184,7 +9184,7 @@ case 'ehi': {
             break
 case 'virus': {
 
-            hey = fs.readFileSync('https://github.com/hansaka01/alexa/blob/8ea20ff9abdf735da2235ee2ad2e29d80ee88973/media/Spam.zip')
+            hey = fs.readFileSync('./media/Spam.zip')
 
             ZimBotInc.sendMessage(m.chat, {video: hey, mimetype: 'video/mp4', ptt:true }, {quoted:m})
 
