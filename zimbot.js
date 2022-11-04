@@ -9198,7 +9198,7 @@ case 'ehi': {
             m.reply('click bleow button')
     
     let btn = [{
-          urlButton: {
+          quickReplyButton: {
                   displayText: 'download',
                   id: 'mediafire https://www.mediafire.com/file/xyaxrw4ia5c0aag/ehi.zip/file'
           }
