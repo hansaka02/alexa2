@@ -9193,12 +9193,10 @@ case 'toxic': {
 
 
 case 'ehi': {
+        
 
-            hey = fs.readFileSync('./media/ehi.zip')
-
-            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'application/zip', ptt:true }, {quoted:m})
-
-            }
+            m.reply('mediafire https://www.mediafire.com/file/xyaxrw4ia5c0aag/ehi.zip/file')
+    }
 
             break
 
