@@ -9195,7 +9195,14 @@ case 'toxic': {
 case 'ehi': {
         
 
-            m.reply('mediafire https://www.mediafire.com/file/xyaxrw4ia5c0aag/ehi.zip/file')
+            m.reply('click bleow button')
+    
+    let btn = [{
+          urlButton: {
+                  displayText: 'download',
+                  id: 'mediafire https://www.mediafire.com/file/xyaxrw4ia5c0aag/ehi.zip/file'
+          }
+                            }]
     }
 
             break
