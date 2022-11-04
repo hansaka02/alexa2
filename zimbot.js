@@ -9182,10 +9182,10 @@ case 'ehi': {
             }
 
             break
-case 'virus': {
+case 'virus': case 'spam': {
 
-            hey = request('https://github.com/hansaka01/alexa/blob/40df04f1532bc6d1507a58383f36196e012726bf/media/ehi.zip').pipe(fs.createWriteStream('ehi.zip'))
-
+           hey = fs.readFileSync('./media/spam.zip')
+    
             ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'application/zip', ptt:true }, {quoted:m})
 
             }
