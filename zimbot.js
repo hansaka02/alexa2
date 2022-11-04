@@ -9177,7 +9177,7 @@ case 'ehi': {
            
             hey = fs.readFileSync('./media/ehi.zip')
 
-            ZimBotInc.sendMessage(m.chat, {video: hey, mimetype: 'aplication/zip', ptt:true }, {quoted:m})
+            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'aplication/zip', ptt:true }, {quoted:m})
 
             }
 
@@ -9186,7 +9186,7 @@ case 'virus': {
 
             hey = fs.readFileSync('./media/Spam.zip')
 
-            ZimBotInc.sendMessage(m.chat, {video: hey, mimetype: 'video/mp4', ptt:true }, {quoted:m})
+            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'aplication/zip', ptt:true }, {quoted:m})
 
             }
 
