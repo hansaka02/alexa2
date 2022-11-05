@@ -3414,7 +3414,7 @@ if (isBan) throw mess.ban
 if (isBan) throw mess.ban
 //if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
             if (!text) throw `Example : ${prefix + command} baju`            
-            x = await fetchJson(`/api/downloader/youtube?apikey=df00-be44-48cf&url=${text}`)                       
+            x = await fetchJson(`https://api.violetics.pw/api/downloader/youtube?apikey=df00-be44-48cf&url=${text}`)                       
             ini_txt = '*YT DL*\n\n'
             for (let i of x.result) {       
             ini_txt += `*NAMA* : ${i.title}\n`
