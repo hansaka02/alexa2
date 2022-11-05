@@ -6647,7 +6647,25 @@ ZimBotInc.sendMessage(m.chat, {image: {url: anu},viewOnce : true},{quoted: m })
             }
         }
         break
+        case 'hello': {
+        
+                        const sendm =  ZimBotInc.sendMessage(
+            m.chat, 
+           {
+       text: `Hi ${pushname}. ${ucapannya2}!. I'm Alexa. How can I help you?`,
+       footer: ZimBotInc.user.name,
+       title: `${ucapannya2} ${pushname}`,
+       let buttons = [
+                        { buttonId: 'menu', buttonText: { displayText: 'COMMANDS' }, type: 1 }
+                    ],
+       sections
+      }, { quoted : m })
+
+         //   m.reply(`Hi ${pushname}. ${ucapannya2}!. I'm Alexa. How can I help you?`)
+
             
+    }
+    break           
     
     case 'hi': {
         
