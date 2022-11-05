@@ -6637,7 +6637,7 @@ ZimBotInc.sendMessage(m.chat, {image: {url: anu},viewOnce : true},{quoted: m })
     case 'hi': {
         
 
-            m.reply('${ucapannya2}, ${pushname} !I am ALEXA how can I help you?')
+            m.reply(`${ucapannya2}, ${pushname}! I am ALEXA how can I help you?`)
     }
     break   
                     
