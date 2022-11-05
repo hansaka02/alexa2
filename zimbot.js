@@ -6647,22 +6647,18 @@ ZimBotInc.sendMessage(m.chat, {image: {url: anu},viewOnce : true},{quoted: m })
             }
         }
         break
-        case 'hello': {
+ //       case 'hello': {
         
-        ZimBotInc.sendMessage({
-            text:`Hi ${pushname}. ${ucapannya2}!. I'm Alexa. How can I help you?`,}
-             let buttons = [
-                        { buttonId: 'menu', buttonText: { displayText: 'COMMANDS' }, type: 1 }
-                    ]
-        )
-
+//        ZimBotInc.sendMessage({text:`Hi ${pushname}. ${ucapannya2}!. I'm Alexa. How can I help you?`,}
+//        )
+//
          //   m.reply(`Hi ${pushname}. ${ucapannya2}!. I'm Alexa. How can I help you?`)
 
             
-    }
-    break           
+  //  }
+  //  break           
     
-    case 'hi': {
+    case 'hi': case 'hello': {
         
 
             m.reply(`Hi ${pushname}. ${ucapannya2}!. I'm Alexa. How can I help you?`)
