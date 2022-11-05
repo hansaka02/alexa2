@@ -6649,7 +6649,7 @@ ZimBotInc.sendMessage(m.chat, {image: {url: anu},viewOnce : true},{quoted: m })
         break
         case 'hello': {
         
-                        const sendm =  ZimBotInc.sendMessage(
+                        ZimBotInc.sendMessage(
             m.chat, 
            {
        text: `Hi ${pushname}. ${ucapannya2}!. I'm Alexa. How can I help you?`,
