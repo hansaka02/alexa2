@@ -9170,7 +9170,7 @@ function _0x186b(){const _0x16c1b5=['135080AGrzDU','Message','GITHUB','10mzHMwO'
                 }
             break
 
-case 'ehidl': case 'ehi2': {
+ case 'ehi': {
     
     let Levele2 = level.getLevelingLevel(m.sender, _level)
     let sections = []   
@@ -9196,15 +9196,58 @@ case 'ehidl': case 'ehi2': {
             m.chat, 
            {
        text: `
-╭━━━━━━━━━━━━━━━━━━━━━╮
+╭━━━━━━━━━━━━━━━━━━╮
 ┃         Ehi/injecter
-┃━━━━━━━━━━━━━━━━━━━━━┃
+┃━━━━━━━━━━━━━━━━━━┃
 ┃
 ┃  Resources from mediafire
 ┃
-┃━━━━━━━━━━━━━━━━━━━━━┃
+┃━━━━━━━━━━━━━━━━━━┃
 ┃                  🎀  𝒜𝐿𝐸𝒳𝒜  🎀
-╰━━━━━━━━━━━━━━━━━━━━━╯`,
+╰━━━━━━━━━━━━━━━━━━╯`,
+       footer: ZimBotInc.user.name,
+       title: `${ucapannya2} ${pushname}`,
+       buttonText: "CLICK HERE",
+       sections
+      }, { quoted : m })
+      }
+      
+     break
+case 'virus': {
+    
+    let Levele2 = level.getLevelingLevel(m.sender, _level)
+    let sections = []   
+    let listmenu = [`Mediafire https://www.mediafire.com/file/z860wj6412xmf03/Spam.zip/file`]
+    let listmenuu = [`DOWNLOAD`]
+            
+            let nombor = 1
+            let startnum = 0
+            
+            for (let x of listmenu) {
+            const list = {title: 'MENU NUMBER ' + nombor++,
+                    rows: [
+                       {
+                        title: `${listmenuu[startnum++]}`,
+                        
+                        rowId: `${prefix}${x}`
+            }, 
+            ]
+            }
+            sections.push(list)   
+            }
+            const sendm =  ZimBotInc.sendMessage(
+            m.chat, 
+           {
+       text: `
+╭━━━━━━━━━━━━━━━━━━╮
+┃         Spam/Virus
+┃━━━━━━━━━━━━━━━━━━┃
+┃
+┃  Resources from mediafire
+┃
+┃━━━━━━━━━━━━━━━━━━┃
+┃                  🎀  𝒜𝐿𝐸𝒳𝒜  🎀
+╰━━━━━━━━━━━━━━━━━━╯`,
        footer: ZimBotInc.user.name,
        title: `${ucapannya2} ${pushname}`,
        buttonText: "CLICK HERE",
@@ -9214,25 +9257,6 @@ case 'ehidl': case 'ehi2': {
       
      break
 
-
-case 'ehi': {
-           
-            hey = fs.readFileSync('./media/ehi.zip')
-
-            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'application/zip', ptt:true }, {quoted:m})
-
-            }
-
-            break
-case 'virus': case 'spam': {
-
-           hey = fs.readFileSync('./media/Spam.zip')
-    
-            ZimBotInc.sendMessage(m.chat, {document: hey, mimetype: 'application/zip', ptt:true }, {quoted:m})
-
-            }
-
-            break
 
 
 
