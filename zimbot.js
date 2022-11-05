@@ -6649,17 +6649,12 @@ ZimBotInc.sendMessage(m.chat, {image: {url: anu},viewOnce : true},{quoted: m })
         break
         case 'hello': {
         
-                        ZimBotInc.sendMessage(
-            m.chat, 
-           {
-       text: `Hi ${pushname}. ${ucapannya2}!. I'm Alexa. How can I help you?`,
-       footer: ZimBotInc.user.name,
-       title: `${ucapannya2} ${pushname}`,
-       let buttons = [
+        ZimBotInc.sendMessage({
+            text:`Hi ${pushname}. ${ucapannya2}!. I'm Alexa. How can I help you?`,}
+             let buttons = [
                         { buttonId: 'menu', buttonText: { displayText: 'COMMANDS' }, type: 1 }
-                    ],
-       sections
-      }, { quoted : m })
+                    ]
+        )
 
          //   m.reply(`Hi ${pushname}. ${ucapannya2}!. I'm Alexa. How can I help you?`)
 
