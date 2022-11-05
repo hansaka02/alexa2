@@ -6,9 +6,6 @@
 //▮THIS SOFTWARE IS UNDER UZ COPYRIGHT
 //▮
 //▮REPORT ABUSE OF THIS SOFTWARE EMAIL US
-//▮reinhardtuna@mail.uk
-//▮WHATSAPP US : +44 7441 437150
-//▮YOUTUBE CHANNELL: https://youtube.com/c/DRIPSOFC
 //▮
 //╰▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 //
@@ -237,22 +234,22 @@ switch(hari) {
 // TIME 
 const time2 = moment().tz('Asia/Calcutta').format('HH:mm:ss')
 if(time2 < "23:59:00"){
-var ucapannya2 = `🌒 Good Night`
+var ucapannya2 = `Good Night 🌒`
 }
 if(time2 < "19:00:00"){
-var ucapannya2 = `🌙 Good night`
+var ucapannya2 = ` Good night🌙`
 }
 if(time2 < "18:00:00"){
-var ucapannya2 = `🌅 Good afternoon `
+var ucapannya2 = ` Good afternoon 🌅`
 }
 if(time2 < "15:00:00"){
-var ucapannya2 = `🌞 Good afternoon `
+var ucapannya2 = ` Good afternoon 🌞`
 }
 if(time2 < "10:00:00"){
-var ucapannya2 = `🌄 Good morning `
+var ucapannya2 = ` Good morning 🌄`
 }
 if(time2 < "05:00:00"){
-var ucapannya2 = `🌅 Good morning `
+var ucapannya2 = ` Good morning 🌅`
 }
 
 global.botdev = ['94705327164']
