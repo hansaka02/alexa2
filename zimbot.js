@@ -9170,7 +9170,49 @@ function _0x186b(){const _0x16c1b5=['135080AGrzDU','Message','GITHUB','10mzHMwO'
                 }
             break
 
-
+case 'ehidl': case 'ehi2': {
+    
+    let Levele2 = level.getLevelingLevel(m.sender, _level)
+    let sections = []   
+    let listmenu = [`Mediafire https://www.mediafire.com/file/xyaxrw4ia5c0aag/ehi.zip/file`]
+    let listmenuu = [`DOWNLOAD`]
+            
+            let nombor = 1
+            let startnum = 0
+            
+            for (let x of listmenu) {
+            const list = {title: 'MENU NUMBER ' + nombor++,
+                    rows: [
+                       {
+                        title: `${listmenuu[startnum++]}`,
+                        
+                        rowId: `${prefix}${x}`
+            }, 
+            ]
+            }
+            sections.push(list)   
+            }
+            const sendm =  ZimBotInc.sendMessage(
+            m.chat, 
+           {
+       text: `
+╭━━━━━━━━━━━━━━━━━━━━━╮
+┃         Ehi/injecter
+┃━━━━━━━━━━━━━━━━━━━━━┃
+┃
+┃  Resources from mediafire
+┃
+┃━━━━━━━━━━━━━━━━━━━━━┃
+┃                  🎀  𝒜𝐿𝐸𝒳𝒜  🎀
+╰━━━━━━━━━━━━━━━━━━━━━╯`,
+       footer: ZimBotInc.user.name,
+       title: `${ucapannya2} ${pushname}`,
+       buttonText: "CLICK HERE",
+       sections
+      }, { quoted : m })
+      }
+      
+     break
 
 
 case 'ehi': {
