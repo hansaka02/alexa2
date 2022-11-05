@@ -3414,7 +3414,7 @@ if (isBan) throw mess.ban
 if (isBan) throw mess.ban
 //if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
             if (!text) throw `Example : ${prefix + command} baju`            
-            x = await fetchJson(`https://api.violetics.pw/api/downloader/youtube?apikey=df00-be44-48cf&url=${text}`)                       
+            x = await fetchJson(`https://api.violetics.pw/api/downloader/youtube?apikey=${setting.violkey}&url=${text}`)                       
             ini_txt = '*YT DL*\n\n'
             for (let i of x.result) {       
             ini_txt += `*NAMA* : ${i.title}\n`
@@ -5741,7 +5741,7 @@ case 'fb6': {
             if (isLimit < 10) return m.reply(mess.endLimit)
             kurangLimit(m.sender, 10)
             m.reply(`10 limit terpakai`)
-                anu = await fetchJson(`https://api.akuari.my.id/downloader/youtube?link=${text}`)        
+                anu = await fetchJson(`https://api.violetics.pw/api/downloader/youtube?apikey=${setting.violkey}&url=${text}`)        
                 if (anu.filesize_video >= 100000) return m.reply('*File Over Limit* '+util.format(anu))
                 tummb = await getBuffer(anu.thumb)
                 audio = await getBuffer(anu.audio)        
