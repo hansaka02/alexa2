@@ -3409,6 +3409,24 @@ if (isBan) throw mess.ban
             m.reply(`${ini_txt}`)
             }            
             break
+                
+                 case 'ytmyd': {
+if (isBan) throw mess.ban
+//if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
+            if (!text) throw `Example : ${prefix + command} baju`            
+            x = await fetchJson(`/api/downloader/youtube?apikey=df00-be44-48cf&url=${text}`)                       
+            ini_txt = '*YT DL*\n\n'
+            for (let i of x.result) {       
+            ini_txt += `*NAMA* : ${i.title}\n`
+            ini_txt += `*Rate* : ${i.rate}\n`
+            ini_txt += `*PACKAGE* : ${i.package}\n`
+            ini_txt += `*URL* : ${i.url}\n`
+            ini_txt += `*DESKRIPSI* : ${i.description}\n\n`         
+            }   
+            ZimBotInc.sendImage(m.chat, x.result[0].thumbnail, `${ini_txt}`, m).catch((err) => m.reply(jsonformat('*Sorry there was an error*')))
+            }
+            break
+                
 case 'playstore': case 'playstoresearch': {
 if (isBan) throw mess.ban
 //if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
