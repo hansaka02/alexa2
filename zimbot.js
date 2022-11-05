@@ -5362,7 +5362,7 @@ case 'mediafire': {
 if (!text) throw '*Enter a Link Query!*'
 if (!isUrl(args[0]) && !args[0].includes('mediafire.com')) throw '*The link you provided is not valid*'
 const baby1 = await mediafireDl(text)
-if (baby1[0].size.split('MB')[0] >= 100) return m.reply('*File Over Limit* '+util.format(baby1))
+if (baby1[0].size.split('MB')[0] >= 5000) return m.reply('*File Over Limit* '+util.format(baby1))
 const result4 = `*▊▊▊MEDIAFIRE DL▊▊▊*
                 
 *Name* : ${baby1[0].nama}
