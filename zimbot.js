@@ -3550,13 +3550,16 @@ case 'news': case 'detik': {
 if (isBan) throw mess.ban
 //if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
           //  if (!text) throw `Example : ${prefix + command} baju`            
-            i = await fetchJson(`https://xteam.xyz/news/detik?APIKEY=${setting.riy}`)            
-            ini_txt = '*NEWS INFO*\n\n'                
-            ini_txt += `*JUDUL* : ${i.judul}\n`
-            ini_txt += `*Rate* : ${i.tanggal}\n`
-            ini_txt += `*ARTIKEL* : ${i.artikel}\n`
-            ini_txt += `*URL* : ${i.url}\n`                 
-            ZimBotInc.sendImage(m.chat, i.thumb, `${ini_txt}`, m).catch((err) => m.reply(jsonformat('*Sorry there was an error*')))
+            i = await fetchJson(`https://violetics.pw/api/news/cnn?apikey=df00-be44-48cf`)            
+                                             ini_txt = '*NEWS INFO*\n\n'                
+            ini_txt += `*⬤TITLE* : ${i.title}\n`
+            ini_txt += `*⬤MORE* : ${i.url}\n`
+            ini_txt += `*⬤period* : ${i.date}\n`
+            ini_txt += `*⬤TAGS* : ${i.tags}\n` 
+            ini_txt += `*⬤DESCRIPTION* : ${i.description}\n`
+            m.reply('wait Alexa is processing')
+            m.reply(`${ini_txt}`)
+            // ZimBotInc.sendImage(m.chat, `${ini_txt}`, m).catch((err) => m.reply(jsonformat('*Sorry there was an error*')))
             }
             break
 case 'searchanime': {
