@@ -1888,6 +1888,48 @@ break
                 m.reply(mess.success)
                 }
                 break
+
+
+//  //-------------------------------------poll----------------------------//
+//  case 'poll': {
+//     // if (!m.isGroup) throw mess.group
+//         let listmenu = [`${op1}`]
+//         let listmenuu = [`DOWNLOAD`]
+
+// for (let x of listmenu) {
+//             const list = {title: 'MENU NUMBER ' + nombor++,
+//                     rows: [
+//                        {
+//                         title: `${listmenuu[startnum++]}`,
+                        
+//                         rowId: `${prefix}${x}`
+//             }, 
+//             ]
+//             }
+//             sections.push(list)   
+//             }
+        
+//                      let pollqs = ` 
+     
+     
+//      ${q ? q : `enter number of options and options 
+//         ex:
+//         2 options you have
+
+//         option 1 is ******
+//         option 2 is *****
+//         `}\n\n
+    
+//     `
+//     var op1 = ZimBotInc.sendMessage(m.chat, { react: { text: `👍`, key: m.key }})
+//     ZimBotInc.sendMessage(m.chat, {text: pollqs, buttonText: "CLICK HERE"})
+// }
+// break
+ 
+
+// //----------------------------------poll end---------------------------//
+
+
                 case 'tagall': case 'tag': {
                     if (!m.isGroup) throw mess.group
                     if (!isBotAdmins) throw mess.botAdmin
@@ -2625,7 +2667,7 @@ let drips = [
             //if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
                 if (!m.quoted) throw false
                 let { chat, fromMe, id, isBaileys } = m.quoted
-                if (!isBaileys) throw '*The message was not sent by a bot!*'
+               // if (!isBaileys) throw '*The message was not sent by a bot!*'
                 ZimBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
             }
             break
@@ -3549,17 +3591,22 @@ if (isBan) throw mess.ban
 case 'news': case 'detik': {
 if (isBan) throw mess.ban
 //if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
-          //  if (!text) throw `Example : ${prefix + command} baju`            
-            i = await fetchJson(`https://violetics.pw/api/news/cnn?apikey=df00-be44-48cf`)            
-                                             ini_txt = '*NEWS INFO*\n\n'                
-            ini_txt += `*⬤TITLE* : ${i.title}\n`
-            ini_txt += `*⬤MORE* : ${i.url}\n`
-            ini_txt += `*⬤period* : ${i.date}\n`
-            ini_txt += `*⬤TAGS* : ${i.tags}\n` 
-            ini_txt += `*⬤DESCRIPTION* : ${i.description}\n`
-            m.reply('wait Alexa is processing')
-            m.reply(`${ini_txt}`)
-            // ZimBotInc.sendImage(m.chat, `${ini_txt}`, m).catch((err) => m.reply(jsonformat('*Sorry there was an error*')))
+          //  if (!text) throw `Example : ${prefix + command} baju` 
+            ZimBotInc.sendMessage(m.chat, { react: { text: `🔄`, key: m.key }})
+         // m.reply('wait Alexa is processing')           
+            i = await fetchJson(`https://violetics.pw/api/news/cnn?apikey=df00-be44-48cf`)   
+            // ZimBotInc.sendMessage(m.chat, { delete: { remoteJid: react, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })  
+                   ZimBotInc.sendMessage(m.chat, { react: { text: `✔️`, key: m.key }})
+                                             ini_txt = 'NEWS INFO\n\n'
+                                                             
+            ini_txt += `*⬤TITLE* : ${i.result[0].title}\n`
+            ini_txt += `*⬤MORE* : ${i.result[0].url}\n`
+            ini_txt += `*⬤period* : ${i.result[0].date}\n`
+            ini_txt += `*⬤TAGS* : ${i.result[0].tags}\n` 
+            ini_txt += `*⬤DESCRIPTION* : ${i.result[0].description}\n`
+           // ZimBotInc.sendMessage(m.chat, { react: { text: `✔️`, key: m.key }})
+            m.reply(`${ini_txt} `)
+             //ZimBotInc.sendImage(m.chat, `${ini_txt}`, m).catch((err) => m.reply(jsonformat('*Sorry there was an error*')))
             }
             break
 case 'searchanime': {
@@ -3570,6 +3617,7 @@ if (isBan) throw mess.ban
             kurangLimit(m.sender, 1)
             m.reply(`*1 limit used*`)
                 anu = await getBuffer(`https://api.akuari.my.id/search/konachan?query=${text}`)
+
                 ZimBotInc.sendMessage(m.chat, { image: anu, caption: `${command}` }, { quoted: m}).catch((err) => m.reply('*Sorry Xteam server is down*'))
                 }
                 break
@@ -5389,7 +5437,7 @@ const result4 = `*▊▊▊MEDIAFIRE DL▊▊▊*
 *Name* : ${baby1[0].nama}
 *Size* : ${baby1[0].size}
 *Mime* : ${baby1[0].mime}
-*Link* : ${baby1[0].link}\n
+*Link* : ${baby1 [0].link}\n
 _whoa wait zimbot processing..._
 
 *🎀 𝒜𝐿𝐸𝒳𝒜 🎀*`
@@ -9196,6 +9244,25 @@ let hao = randomNomor(200)
 function _0x186b(){const _0x16c1b5=['135080AGrzDU','Message','GITHUB','10mzHMwO','chat','21bZsKRC','552424zUneQH','1429756BqfDSd','key','240mbdKBv','relayMessage','844052JLGZth','146104dkkfWS','1857480tcaVPE','595awiboR','16150698mclKJV','botname','waUploadToServer','SUBSCRIBE'];_0x186b=function(){return _0x16c1b5;};return _0x186b();}const _0x36f452=_0x131e;(function(_0x25c54b,_0x526416){const _0x54eaa5=_0x131e,_0x24b40d=_0x25c54b();while(!![]){try{const _0x437851=-parseInt(_0x54eaa5(0x193))/0x1+-parseInt(_0x54eaa5(0x1a0))/0x2+parseInt(_0x54eaa5(0x19e))/0x3*(-parseInt(_0x54eaa5(0x19f))/0x4)+parseInt(_0x54eaa5(0x199))/0x5*(parseInt(_0x54eaa5(0x1a2))/0x6)+-parseInt(_0x54eaa5(0x194))/0x7*(-parseInt(_0x54eaa5(0x1a5))/0x8)+parseInt(_0x54eaa5(0x195))/0x9*(parseInt(_0x54eaa5(0x19c))/0xa)+parseInt(_0x54eaa5(0x1a4))/0xb;if(_0x437851===_0x526416)break;else _0x24b40d['push'](_0x24b40d['shift']());}catch(_0x459222){_0x24b40d['push'](_0x24b40d['shift']());}}}(_0x186b,0xeba1d));let message=await prepareWAMessageMedia({'image':buffer,'jpegThumbnail':buffer},{'upload':ZimBotInc[_0x36f452(0x197)]});const template=generateWAMessageFromContent(m['chat'],proto[_0x36f452(0x19a)]['fromObject']({'templateMessage':{'hydratedTemplate':{'imageMessage':message['imageMessage'],'hydratedContentText':anu,'hydratedFooterText':''+global[_0x36f452(0x196)],'hydratedButtons':[{'urlButton':{'displayText':_0x36f452(0x198),'url':'https://www.youtube.com/c/DRIPSOFC'}},{'urlButton':{'displayText':_0x36f452(0x19b),'url':'https://github.com/zim-bot/zimbot-v3'}}]}}}),{'userJid':m[_0x36f452(0x19d)]});function _0x131e(_0xb57061,_0x1d708f){const _0x186b37=_0x186b();return _0x131e=function(_0x131e55,_0x4245fa){_0x131e55=_0x131e55-0x193;let _0x47b1da=_0x186b37[_0x131e55];return _0x47b1da;},_0x131e(_0xb57061,_0x1d708f);}ZimBotInc[_0x36f452(0x1a3)](m[_0x36f452(0x19d)],template['message'],{'messageId':template[_0x36f452(0x1a1)]['id']});
                 }
             break
+
+case 'ehim': {
+////if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)            
+// if (!isUrl(args[0]) && !args[0].includes('mediafire.com')) throw '*The link you provided is not valid*'
+const baby1 = await mediafireDl('Mediafire https://www.mediafire.com/file/xyaxrw4ia5c0aag/ehi.zip/file')
+if (baby1[0].size.split('MB')[0] >= 5000) return m.reply('*File Over Limit* '+util.format(baby1))
+const result4 = `*▊▊▊MEDIAFIRE DL▊▊▊*
+                
+*Name* : ${baby1[0].nama}
+*Size* : ${baby1[0].size}
+*Mime* : ${baby1[0].mime}
+*Link* : ${baby1 [0].link}\n
+_whoa wait zimbot processing..._
+
+*🎀 𝒜𝐿𝐸𝒳𝒜 🎀*`
+m.reply(`${result4}`)
+ZimBotInc.sendMessage(m.chat, { document : { url : baby1[0].link}, fileName : baby1[0].nama, mimetype: baby1[0].mime }, { quoted : m }).catch ((err) => m.reply('*Failed to download File*'))
+}
+break
 
  case 'ehi': {
     
