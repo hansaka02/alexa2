@@ -1,14 +1,14 @@
-FROM node:7.8.0
+FROM node:lts-buster
 
+RUN apt-get update && \
+  apt-get install -y \
+  apt-get upgrade -y && \
+  rm -rf /var/lib/apt/lists/*
 
-WORKDIR /
-
-
-
-
-EXPOSE 80
-
+COPY package.json .
 
 RUN npm install
 
-RUN node index.js
+COPY . .
+
+RUN npm start
