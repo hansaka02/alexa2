@@ -1,17 +1,14 @@
-FROM node:lts-buster
+FROM node:7.8.0
 
-RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
 
-COPY package.json .
+WORKDIR /
+
+ADD . /
+
+
+EXPOSE 80
+
 
 RUN npm install
 
-COPY . .
-
-RUN npm start
+ENTRYPOINT npm run start
