@@ -11,4 +11,4 @@ EXPOSE 80
 
 RUN npm install
 
-RUN npm start
+RUN node index.js
