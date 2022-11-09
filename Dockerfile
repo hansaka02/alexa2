@@ -1,4 +1,4 @@
-FROM node:lts-buster
+nFROM node:lts-buster
 
 RUN apt-get update && \
   apt-get install -y \
@@ -14,4 +14,4 @@ RUN npm install
 
 COPY . .
 
-CMD ["npm", "start"]
+ENTRYPOINT npm run start
