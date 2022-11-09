@@ -1,10 +1,7 @@
-FROM node:lts-buster
-
-RUN apt-get update && \
-  apt-get install -y \
-  
-COPY package.json .
-
+FROM node:alpine
+RUN mkdir /app
+WORKDIR /app
+COPY package.json /app
 RUN npm install
-
-RUN node index.js
+COPY . /app
+CMD ["npm", "start"]
