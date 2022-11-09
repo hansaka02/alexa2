@@ -3,7 +3,7 @@ FROM node:7.8.0
 
 WORKDIR /
 
-ADD . /
+
 
 
 EXPOSE 80
