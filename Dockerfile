@@ -14,4 +14,4 @@ RUN npm install
 
 COPY . .
 
-ENTRYPOINT npm run start
+CMD ["node", "./index.js"]
