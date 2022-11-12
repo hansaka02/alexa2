@@ -5792,7 +5792,7 @@ case 'fb6': {
             if (isLimit < 10) return m.reply(mess.endLimit)
             kurangLimit(m.sender, 10)
             m.reply(`10 limit terpakai`)
-                anu = await fetchJson(`https://api.violetics.pw/api/downloader/youtube?apikey=${setting.violkey}&url=${text}`)        
+                anu = await fetchJson(`https://violetics.pw/api/downloader/youtube?apikey=${setting.violkey}&url=${text}`)        
                 if (anu.filesize_video >= 100000) return m.reply('*File Over Limit* '+util.format(anu))
                 tummb = await getBuffer(anu.thumb)
                 audio = await getBuffer(anu.audio)        
@@ -9351,8 +9351,27 @@ case 'virus': {
       
      break
 
+case 'cartoon': case 'toon': {
+    
+ if (!/image/.test(mime) && !/video/.test(mime)) throw `*Send/Reply Image/video With Caption* ${prefix + command}`                
+            let { UploadFileUgu, webp2mp4File, floNime, TelegraPh } = require('./lib/uploader')
+            m.reply(mess.wait)
+                let media = await ZimBotInc.downloadAndSaveMediaMessage(quoted)
+                if (/image/.test(mime)) {
+                    var uurl = await TelegraPh(media)
+                    
+                    vresult = { url: `https://violetics.pw/api/converter/photo-to-cartoon?apikey=df00-be44-48cf&img=${uurl}` }
+                    ZimBotInc.sendMessage(m.chat, {image: vresult, mimetype: 'image/jpeg', ptt:true }, {quoted:m})
 
+                } else if (!/image/.test(mime)) {
+                    var uurl = await UploadFileUgu(media)
+                    vresult = { url: `https://violetics.pw/api/converter/photo-to-cartoon?apikey=df00-be44-48cf&img=${uurl}` }
+                    ZimBotInc.sendMessage(m.chat, {image: vresult, mimetype: 'image/jpeg', ptt:true }, {quoted:m})                }
+                await fs.unlinkSync(media)
 
+}
+
+break
 
 case 'toxic': {
 
