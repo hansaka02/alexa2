@@ -5785,14 +5785,14 @@ case 'fb6': {
             }
             break
             case 'youtube': case 'ytdl': {
-                ////if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
+	            ////if (isLimit(m.sender, isPremium, isCreator, limitCount, limit)) return m.reply(mess.endLimit)
                 if (!text) throw '*Enter a Link Query!*'
                 if (!isUrl(args[0]) && !args[0].includes('youtube.com')) throw '*The link you provided is not valid*'
                 if (!isInventoryLimit){ addInventoriLimit(m.sender) }
             if (isLimit < 10) return m.reply(mess.endLimit)
             kurangLimit(m.sender, 10)
             m.reply(`10 limit terpakai`)
-                anu = await fetchJson(`https://violetics.pw/api/downloader/youtube?apikey=${setting.violkey}&url=${text}`)        
+                anu = await fetchJson(`https://api.akuari.my.id/downloader/youtube?link=${text}`)        
                 if (anu.filesize_video >= 100000) return m.reply('*File Over Limit* '+util.format(anu))
                 tummb = await getBuffer(anu.thumb)
                 audio = await getBuffer(anu.audio)        
