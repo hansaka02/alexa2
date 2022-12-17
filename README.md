@@ -23,9 +23,9 @@
 
 
 
-<br>
+
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@hansaka01/ALEXABOtWA-QR?v=1)
-<br>
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zim-bot/zimbot-v3)
 
 ## >  NEW FEATURE ADDED
