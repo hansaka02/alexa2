@@ -22,9 +22,15 @@
 ## DONT FORGET TO GIVE A STAR🌟 AND FORK
 
 
-
+## GET QR CODE 
 
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@hansaka01/ALEXABOtWA-QR?v=1)
+
+## FORK REPO
+
+[![Fork](https://img.icons8.com/ios-filled/50/null/git.png)](/hansaka01/alexa/generate)
+
+## DEPLOY BOT
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zim-bot/zimbot-v3)
 
@@ -45,7 +51,7 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 
 https://github.com/DuckyTeam/heroku-buildpack-imagemagick
 ```
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@hansaka01/ALEXABOtWA-QR?v=1)
+
 <img src="https://fontmeme.com/permalink/220116/0c42dc0b64931810388ba399da55e927.png" alt="backwoods-logo-font" border="0"></a>  
 
  ##  > THIS BOT CODED BY DRIPS MEMES ZIM BOT INC 
