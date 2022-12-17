@@ -28,7 +28,7 @@
 
 ## FORK REPO
 
-[![Fork](https://img.icons8.com/ios-filled/50/null/git.png)](/hansaka01/alexa/generate)
+[![Fork Repo](https://img.icons8.com/fluency/48/null/code-fork.png)](https://github.com/hansaka01/alexa/generate)
 
 ## DEPLOY BOT
 
